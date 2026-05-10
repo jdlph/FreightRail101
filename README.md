@@ -27,7 +27,11 @@ Given a blocking plan, the next step is to design a set of trains to flow blocks
 1. Train route as a sequence of links in the physical network, which details the movement of each train from its origin to its destination.
 2. Block-to-train assignment (BTA).
 
-Similar to blocking sequence, BTA specifies how a block will flow through trains as a sequence of interconnected train legs, where a train leg corresponds to a train route segment from the block pickup location to the setoff location. Note that they do not have to be the origin or the destination of a train. A block may move through multiple trains. Such a transfer operation is called block swap in railroads or transshipment in logistics. Matching them with the blocking sequence of a shipment will lead to a sequence of train legs which outline how a shipment flows (from its first serving yard to its last serving yard).
+Similar to blocking sequence, BTA specifies how a block will flow through trains as a sequence of interconnected train legs, where a train leg corresponds to a train route segment from the block pickup location to the setoff location. Note that they do not have to be the origin or the destination of a train.
+
+Matching BTA with the blocking sequence of a shipment will lead to a sequence of train legs which outline how a shipment flows (from its first serving yard to its last serving yard). A block can have multiple BTAs implying alterative train leg sequences.
+
+A block may move through multiple trains, while each train may carry multiple blocks along its route. Such a block transfer operation between trains is called block swap in railroads or transshipment in logistics.
 
 As a block is a transportation request requiring pickup and delivery, the train routing problem (for manifest blocks) can be viewed as a variant of the pickup and delivery problem with transshipments (PDP-T). Its outcome as a combination of the foregoing two decisions (train routes and BTAs) is referred to as a routing plan.
 
