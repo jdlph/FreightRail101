@@ -11,7 +11,7 @@ Blocking is the first step in strategic planning to consolidate individual traff
 1. Between which two yards to build a block.
 2. The blocking sequence for each shipment.
   
-As a shipment requires one or more blocks to reach its last serving yard, the second decision is about how to route a shipment on the designed blocking network via an ordered sequence of interconnected blocks connecting a shipment from its first serving yard to its last serving yard. A waybill may involve two types of classification.
+As a shipment requires one or more blocks to reach its last serving yard, the second decision is about how to route a shipment on the designed blocking network via an ordered sequence of interconnected blocks connecting a shipment from its first serving yard to its last serving yard. A shipment may involve two types of classification.
 1. Origin classificatio at its first serving yard.
 2. (Re)classificationat an itermediate yard.
    
@@ -36,7 +36,9 @@ A blocking plan and the corresponding routing plan do not have the time componen
 2. Operating days of week: which days to run a train.
 3. Timetabling at each working event location (where blocks are picked up or set off) as arrival time and departure time.
 
-Together, blocking, train routing, and train scheduling define how each waybill traverses the designed service network as a complete itinerary. This integrated planning process is often referred to as **trip planning**.
+### Trip Planning
+
+Together, blocking, train routing, and train scheduling define how each shipment traverses the designed service network as a complete itinerary. This integrated planning process is often referred to as **trip planning**.
 
 On the other hand, an itinerary shows where a shipment idles waiting for connections. It is referred to as dwell in railroads. A scheduling plan is generally assessed against total system dwell as measured by $car \cdot days$.
 
